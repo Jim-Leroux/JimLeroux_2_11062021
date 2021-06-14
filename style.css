@@ -19,7 +19,7 @@ header {
 /********** NAV **********/
 
 #nav1 {
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: grid;
     text-align: center;
@@ -37,8 +37,8 @@ a {
 }
 #nav-logo {
     width: 12vh;
-    padding-right: 40%;
     padding-top: 1rem;
+    padding-right: 35%;
     align-content: center;
     grid-area: logo;
 }
@@ -69,12 +69,12 @@ a {
 }
 
 #nav-activity a {
-    padding: 2rem 5rem;
+    padding: 2rem 0;
     color: #000000;
 }
 
 #nav-sign-up {
-    padding-left: 50%;
+    padding-left: 35%;
     padding-top: 1.7rem;
     grid-area: sign-up;
 }
@@ -87,7 +87,7 @@ a {
 /********** MAIN **********/
 
 main {
-    width: 90%;
+    width: 100%;
     max-width: 1440px;
     margin: auto;
 }
@@ -95,23 +95,27 @@ main {
 /********** SEARCH **********/
 
 #search {
+    margin: auto;
     padding: 0.5rem 0;
 }
 
 #title-h1 {
-    margin: 0;
+    width: 90%;
+    margin: 0 7%;
     padding: 0.5rem 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 #subtitle {
-    margin: 0;
+    width: 90%;
+    margin: 0 7%;
     padding: 0;
     font-size: 1rem;
 }
 
 #research1 {
-    margin: 0;
+    width: 90%;
+    margin: 0 7%;
     padding: 1rem 0;
 }
 
@@ -130,6 +134,7 @@ main {
 }
 
 #searchbar {
+    width: 60%;
     padding: 1rem;
     border: 1px solid #f2f2f2;
     font-family: 'Raleway', sans-serif;
@@ -149,6 +154,7 @@ main {
 }
 
 #title-h2 {
+    margin: 0 7%;
     display: inline;
     font-size: 1.5rem;
 }
@@ -212,7 +218,9 @@ main {
     border-radius: 2rem;
 }
  #info {
-     display: flex;
+    width: 90%;
+    margin: 0 7%;
+    display: flex;
  }
 #info i {
     height: 2rem;
@@ -241,7 +249,7 @@ main {
     background-color: #f2f2f2;
     margin: 2rem auto;
     padding: 0.8rem 0rem;
-    width: 100%;
+    width: 85%;
     border-radius: 20px 20px;
     display: flex;
     flex-direction: column;
@@ -262,6 +270,7 @@ main {
 }
 
 #populartitle p {
+    font-weight: 900;
     font-size: 1.4rem;
 }
 
@@ -269,7 +278,7 @@ main {
 #popularhotel {
     background-color: white;
     margin: 1rem auto;
-    height: 20vh;
+    height: 23vh;
     width: 85%;
     border-radius: 20px 20px;
     display: flex;
@@ -290,6 +299,8 @@ main {
 }
 
 #popularprice {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -305,7 +316,6 @@ main {
 
 #popularprice p {
     margin-top: 0;
-    margin-bottom: 3.7rem;
     padding: 0;
 }
 
@@ -325,14 +335,21 @@ main {
 
 #popularprice2 p {
     margin-top: 0;
-    margin-bottom: 2.2rem;
     padding: 0;
 }
 
 #boldprice {
     font-weight: bold;
 }
+#star-align {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #star {
+    margin-bottom: 2%;
     display: flex;
 }
 #bluestar {
@@ -352,7 +369,7 @@ main {
     background-color: #f2f2f2;
     margin: 2rem auto;
     padding: 0.8rem 0rem;
-    width: 100%;
+    width: 85%;
     border-radius: 20px 20px;
     display: flex;
     flex-direction: column;
@@ -471,6 +488,7 @@ main {
 }
 
 #lodgingprice {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -493,6 +511,7 @@ main {
 }
 
 #lodgingstar {
+    margin-bottom: 2%;
     margin-left: 1rem;
     display: flex;
 }
@@ -508,7 +527,7 @@ main {
 #marseilleactivity {
     margin: 2rem auto;
     padding: 0.8rem 0rem;
-    width: 100%;
+    width: 85%;
     border-radius: 20px 20px;
     display: flex;
     flex-direction: column;
@@ -751,6 +770,14 @@ footer a:hover {
 
     /********** SEARCH **********/
 
+    #title-h1 {
+        margin:  auto;
+    }
+
+    #subtitle {
+        margin: auto;
+    }
+
     #research1 {
         display: none;
         margin: 0;
@@ -758,22 +785,52 @@ footer a:hover {
     }
     
     #research2 {
+        margin-left: 2rem;
         display: flex;
-        margin: 0;
         padding: 1rem 0;
     }
     
-
-    /********** POPULAR **********/
-
-    #popularphoto {
+    #searchbar {
         width: 30%;
     }
 
-    #popularprice2 p {
-        margin-bottom: 3.7rem;
+    #filter {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
+    #title-h2 {
+        margin-top: 2rem;
+        margin-left: 2.8rem;
+        margin-right: 0;
+        display: flex;
+    }
+
+    #filter ul {
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /********** POPULAR **********/
+
+    #popularhotel {
+        background-color: white;
+        margin: 1rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        transition: 0.4s;
+    }
+    
+    #popularphoto {
+        width: 30%;
+    }
     /********** LODGING **********/
 
     #lodging {
