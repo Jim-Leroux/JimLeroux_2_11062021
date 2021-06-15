@@ -50,7 +50,7 @@ a {
 }
 
 #nav-lodging a {
-    width: 1.5rem 0rem;
+    width: 100%;
     color: #0065fc;
 }
 #nav-activity {
@@ -63,8 +63,7 @@ a {
     border-bottom: 3px solid #0065fc;
 }
 
-#nav-activity a:hover {
-    cursor: pointer;
+#nav-activity:hover a {
     color: #0065fc;
 }
 
@@ -120,8 +119,9 @@ main {
 }
 
 #research2 {
+    width: 90%;
     display: none;
-    margin: 0;
+    margin: 0 7%;
     padding: 1rem 0;
 }
 
@@ -135,6 +135,7 @@ main {
 
 #searchbar {
     width: 60%;
+    max-width: 15rem;
     padding: 1rem;
     border: 1px solid #f2f2f2;
     font-family: 'Raleway', sans-serif;
@@ -154,6 +155,7 @@ main {
 }
 
 #title-h2 {
+    height: 20%;
     margin: 0 7%;
     display: inline;
     font-size: 1.5rem;
@@ -731,7 +733,8 @@ footer a:hover {
         align-content: center;
     }
 
-    #nav2-logo {
+    #nav-logo {
+        width: 12vh;
         display: flex;
     }
 
@@ -785,13 +788,13 @@ footer a:hover {
     }
     
     #research2 {
-        margin-left: 2rem;
         display: flex;
+        margin: auto;
         padding: 1rem 0;
     }
     
     #searchbar {
-        width: 30%;
+        width: 15rem;
     }
 
     #filter {
@@ -819,7 +822,7 @@ footer a:hover {
     #popularhotel {
         background-color: white;
         margin: 1rem auto;
-        height: 15vh;
+        height: 20vh;
         width: 85%;
         border-radius: 20px 20px;
         display: flex;
@@ -829,14 +832,14 @@ footer a:hover {
     }
     
     #popularphoto {
-        width: 30%;
+        width: 25vh;
     }
     /********** LODGING **********/
 
     #lodging {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 9vh repeat(3, 1fr) 9vh;
+        grid-template-rows: 7vh repeat(3, 1fr) 5vh;
         grid-template-areas: 
                         "title title"
                         "hotel1 hotel2"
@@ -855,32 +858,43 @@ footer a:hover {
         width: 100%;
         margin-left: 2.2rem;
     }
+
+    #lodgingphoto {
+        height: 13vh;
+    }
+
     #lodginghotel1 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel1;
     }
 
     #lodginghotel2 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel2;
     }
 
     #lodginghotel3 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel3;
     }
 
     #lodginghotel4 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel4;
     }
 
     #lodginghotel5 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel5;
     }
 
     #lodginghotel6 {
+        height: 23vh;
         width: 85%;
         grid-area: hotel6;
     }
@@ -894,7 +908,7 @@ footer a:hover {
 
     #marseilleactivity {
         display: grid;
-        grid-gap: 0.5rem 2rem;
+        grid-gap: 2rem 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 4rem repeat(3, 1fr);
         grid-template-areas: 
@@ -908,30 +922,43 @@ footer a:hover {
         grid-area: title;
     }
 
+    #activityphoto {
+        margin: auto;
+    }
+
     #activityarea1 {
+        height: 20vh;
         grid-area: activity1;
     }
 
     #activityarea2 {
+        height: 20vh;
         grid-area: activity2;
     }
 
     #activityarea3 {
+        height: 20vh;
         grid-area: activity3;
     }
 
     #activityarea4 {
+        height: 20vh;
         grid-area: activity4;
     }
 
     #activityarea5 {
+        height: 20vh;
         grid-area: activity5;
     }
 
     #activityarea6 {
+        height: 20vh;
         grid-area: activity6;
     }
 
+    #area-name {
+        margin-bottom: 1.5rem;
+    }
     /********** FOOTER **********/
 
     #footerblock {
