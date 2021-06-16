@@ -734,7 +734,7 @@ footer a:hover {
     }
 
     #nav-logo {
-        width: 12vh;
+        width: 8vh;
         display: flex;
     }
 
@@ -798,7 +798,7 @@ footer a:hover {
     }
 
     #filter {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: flex-start;
     }
@@ -817,12 +817,20 @@ footer a:hover {
         flex-wrap: wrap;
     }
 
+    #info {
+        width: 90%;
+        margin: auto;
+    }
     /********** POPULAR **********/
+
+    #popular {
+        width: 90%;
+    }
 
     #popularhotel {
         background-color: white;
         margin: 1rem auto;
-        height: 20vh;
+        height: 15vh;
         width: 85%;
         border-radius: 20px 20px;
         display: flex;
@@ -837,6 +845,7 @@ footer a:hover {
     /********** LODGING **********/
 
     #lodging {
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 7vh repeat(3, 1fr) 5vh;
@@ -985,7 +994,7 @@ footer a:hover {
 
 /********** MEDIA QUERIES **********/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1101px) and (max-width: 1439px) {
 
     /********** HEADER **********/
 
@@ -1004,7 +1013,8 @@ footer a:hover {
         align-content: center;
     }
 
-    #nav2-logo {
+    #nav-logo {
+        width: 10vh;
         display: flex;
     }
 
@@ -1043,6 +1053,14 @@ footer a:hover {
 
     /********** SEARCH **********/
 
+    #title-h1 {
+        margin:  auto;
+    }
+
+    #subtitle {
+        margin: auto;
+    }
+
     #research1 {
         display: none;
         margin: 0;
@@ -1051,10 +1069,39 @@ footer a:hover {
     
     #research2 {
         display: flex;
-        margin: 0;
+        margin: auto;
         padding: 1rem 0;
     }
+    
+    #searchbar {
+        width: 15rem;
+    }
 
+    #filter {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #title-h2 {
+        margin-top: 2rem;
+        margin-left: 2.8rem;
+        margin-right: 0;
+        display: flex;
+    }
+
+    #filter ul {
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #info {
+        width: 90%;
+        margin: auto;
+    }
     /********** LODGINGBLOCK **********/
 
     #lodgingblock {
@@ -1069,7 +1116,7 @@ footer a:hover {
         background-color: #f2f2f2;
         margin-top: 1rem;
         padding: 0.8rem 0rem;
-        width: 100%;
+        width: 90%;
         border-radius: 20px 20px;
         display: flex;
         flex-wrap: wrap;
@@ -1100,10 +1147,8 @@ footer a:hover {
     /********** LODGING **********/
 
     #lodging {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
-        width: 100%;
+        margin: auto;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -1143,6 +1188,7 @@ footer a:hover {
 
     #marseilleactivity {
         height: 550px;
+        width: 90%;
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
@@ -1174,13 +1220,13 @@ footer a:hover {
     }
 
     #activityarea2 {
-        height: 37vh;
+        height: 29.7vh;
         grid-area: activity2;
     }
 
     #activityarea3 {
         margin-top: 1.9rem;
-        height: 25vh;
+        height: 20vh;
         grid-area: activity3;
     }
 
@@ -1190,13 +1236,312 @@ footer a:hover {
     }
 
     #activityarea5 {
-        height: 25vh;
+        height: 20vh;
         grid-area: activity5;
     }
 
     #activityarea6 {
         margin-top: 2.5rem;
-        height: 37vh;
+        height: 29.7vh;
+        grid-area: activity6;
+    }
+
+        /********** FOOTER **********/
+
+    #footerblock {
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0rem;
+        display: flex;
+        align-content: center;
+    }
+    
+    #footer1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2rem;
+        margin-right: 6rem;
+    }
+    
+    #footer2 {
+        margin: 0 7rem;
+    }
+    
+    #footer3 {
+        margin: 0 7rem;
+    }
+}
+
+
+
+/********** MEDIA QUERIES **********/
+
+@media screen and (min-width: 1440px) {
+
+    /********** HEADER **********/
+
+    header {
+        width: 95%;
+    }
+
+    /********** NAV **********/
+
+    #nav1 {
+        display: none;
+    }
+    #nav2 {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    #nav-logo {
+        width: 10vh;
+        display: flex;
+    }
+
+    #nav2-menu {
+        display: flex;
+    }
+
+    #nav-lodging {
+        border-top: 3px solid #0065fc;
+        border-bottom: none;
+    }
+
+    #nav-lodging a {
+        padding: 2rem;
+    }
+    #nav-activity {
+        border-top: 3px solid transparent;
+    }
+
+    #nav-activity:hover {
+        border-top: 3px solid #0065fc;
+        border-bottom: none;
+    }
+
+    #nav-activity a {
+    padding: 2rem;
+
+    }
+
+    #nav-sign-up {
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        border-top: 3px solid transparent;
+    
+    }
+
+    /********** SEARCH **********/
+
+    #title-h1 {
+        width: 95%;
+        margin:  auto;
+    }
+
+    #subtitle {
+        width: 95%;
+        margin: auto;
+    }
+
+    #research1 {
+        display: none;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    #research2 {
+        width: 95%;
+        display: flex;
+        margin: auto;
+        padding: 1rem 0;
+    }
+    
+    #searchbar {
+        width: 15rem;
+    }
+
+    #filter {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #title-h2 {
+        margin-top: 2rem;
+        margin-left: 2.8rem;
+        margin-right: 0;
+        display: flex;
+    }
+
+    #filter ul {
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #info {
+        width: 95%;
+        margin: auto;
+    }
+    /********** LODGINGBLOCK **********/
+
+    #lodgingblock {
+        margin: auto;
+        width: 95%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    /********** POPULAR **********/
+
+    #popular {
+        background-color: #f2f2f2;
+        margin: 2rem 0;
+        padding: 0;
+        height: 20%;
+        width: 30%;
+        border-radius: 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #populartitle {
+        grid-area: title;
+        margin: auto;
+        width: 85%;
+    }
+
+    #popularhotel {
+        background-color: white;
+        margin: 1.7rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+    }   
+
+    #popularprice p {
+        margin-top: 0;
+        margin-bottom: 2.2rem;
+        padding: 0;
+    }
+    /********** LODGING **********/
+
+    #lodging {
+        margin: 2rem 0;
+        height: 60%;
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    #lodgingphoto {
+        height: 13vh;
+    }
+
+    #lodgingtitle {
+        width: 95%;
+    }
+
+    #lodginghotel1 {
+        height: 28%;
+        width: 30%;
+    }
+
+    #lodginghotel2 {
+        height: 28%;
+        width: 30%;
+    }
+
+    #lodginghotel3 {
+        height: 28%;
+        width: 30%;
+    }
+
+    #lodginghotel4 {
+        height: 28%;
+        width: 30%;
+    }
+
+    #lodginghotel5 {
+        height: 28%;
+        width: 30%;
+    }
+
+    #lodginghotel6 {
+        height: 28%;
+        width: 30%;
+    }
+
+
+    /********** ACTIVITY **********/
+
+    #marseilleactivity {
+        height: 550px;
+        width: 90%;
+        display: grid;
+        grid-gap: 0 2.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 4rem repeat(5, 0.3fr);
+        grid-template-areas: 
+                        "title title title title"
+                        "activity1 activity2 activity4 activity5"
+                        "activity1 activity2 activity4 activity5"
+                        "activity1 activity2 activity4 activity6"
+                        "activity1 activity3 activity4 activity6"
+                        "activity1 activity3 activity4 activity6";
+    }
+
+    #activityphoto {
+        margin: 0 auto;
+        height: 90%;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    #activitytitle {
+        grid-area: title;
+    }
+
+    #activityarea1 {
+        height: 100%;
+        grid-area: activity1;
+    }
+
+    #activityarea2 {
+        height: 29.7vh;
+        grid-area: activity2;
+    }
+
+    #activityarea3 {
+        margin-top: 1.9rem;
+        height: 20vh;
+        grid-area: activity3;
+    }
+
+    #activityarea4 {
+        height: 100%;
+        grid-area: activity4;
+    }
+
+    #activityarea5 {
+        height: 20vh;
+        grid-area: activity5;
+    }
+
+    #activityarea6 {
+        margin-top: 2.5rem;
+        height: 29.7vh;
         grid-area: activity6;
     }
 
