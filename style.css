@@ -18,7 +18,7 @@ header {
 
 /********** NAV **********/
 
-#nav1 {
+.nav1 {
     margin: auto;
     padding: 0;
     display: grid;
@@ -29,13 +29,13 @@ header {
                     "logo sign-up"
                     "lodging activity";
 }
-#nav2 {
+.nav2 {
     display: none;
 }
 a {
     text-decoration: none;
 }
-#nav-logo {
+.nav-logo {
     width: 12vh;
     padding-top: 1rem;
     padding-right: 35%;
@@ -43,42 +43,42 @@ a {
     grid-area: logo;
 }
 
-#nav-lodging {
+.nav-lodging {
     padding: 1.5rem 0rem;
     border-bottom: 3px solid #0065fc;
     grid-area: lodging;
 }
 
-#nav-lodging a {
+.nav-lodging a {
     width: 100%;
     color: #0065fc;
 }
-#nav-activity {
+.nav-activity {
     padding: 1.5rem 0rem;
     grid-area: activity;
 }
 
-#nav-activity:hover {
+.nav-activity:hover {
     cursor: pointer;
     border-bottom: 3px solid #0065fc;
 }
 
-#nav-activity:hover a {
+.nav-activity:hover a {
     color: #0065fc;
 }
 
-#nav-activity a {
+.nav-activity a {
     padding: 2rem 0;
     color: #000000;
 }
 
-#nav-sign-up {
+.nav-sign-up {
     padding-left: 35%;
     padding-top: 1.7rem;
     grid-area: sign-up;
 }
 
-#nav-sign-up a {
+.nav-sign-up a {
     font-weight: bold;
     color: #0065fc;
 }
@@ -93,39 +93,39 @@ main {
 
 /********** SEARCH **********/
 
-#search {
+.search {
     margin: auto;
     padding: 0.5rem 0;
 }
 
-#title-h1 {
+.title-h1 {
     width: 90%;
     margin: 0 7%;
     padding: 0.5rem 0;
     font-size: 1.7rem;
 }
 
-#subtitle {
+.subtitle {
     width: 90%;
     margin: 0 7%;
     padding: 0;
     font-size: 1rem;
 }
 
-#research1 {
+.research1 {
     width: 90%;
     margin: 0 7%;
     padding: 1rem 0;
 }
 
-#research2 {
+.research2 {
     width: 90%;
     display: none;
     margin: 0 7%;
     padding: 1rem 0;
 }
 
-#searchicon {
+.searchicon {
     background-color: #f2f2f2;
     padding: 1rem 1.2rem;
     border: 1px solid #f2f2f2;
@@ -133,7 +133,7 @@ main {
     font-size: 1rem;
 }
 
-#searchbar {
+.searchbar {
     width: 60%;
     max-width: 15rem;
     padding: 1rem;
@@ -145,7 +145,7 @@ main {
     outline: none;
 }
 
-#searchbutton {
+.searchbutton {
     background-color: #0065fc;
     padding: 1rem 1.5rem;
     border: 1px solid #0065fc;
@@ -154,19 +154,20 @@ main {
     color: white;
 }
 
-#title-h2 {
+.title-h2 {
     height: 20%;
     margin: 0 7%;
     display: inline;
     font-size: 1.5rem;
 }
-#filter ul {
+
+.filter ul {
     padding: 0;
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-#filter ul li {
+.filter ul li {
     display: inline-block;
     margin-top: 10px;
     margin-left: 25px;
@@ -179,7 +180,7 @@ main {
 
 }
 
-#filter ul li:hover {
+.filter ul li:hover {
     background-color: #f0f6ff;
 }
 
@@ -219,12 +220,14 @@ main {
     border: 1rem solid #DEEBFF;
     border-radius: 2rem;
 }
- #info {
+
+.info {
     width: 90%;
     margin: 0 7%;
     display: flex;
  }
-#info i {
+
+.info i {
     height: 2rem;
     width: 2rem;
     min-height: 2rem;
@@ -238,12 +241,12 @@ main {
     align-items: center;
 }
 
-#info p {
+.info p {
     margin: auto 1rem;
 }
 /********** POPULAR **********/
 
-#lodgingblock {
+.lodgingblock {
     background-color: rgb(255, 255, 255);
 }
 
@@ -257,27 +260,27 @@ main {
     flex-direction: column;
 }
 
-#populartitle {
+.populartitle {
     margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
 }
 
-#lodgingtitle {
+.lodgingtitle {
     margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
 }
 
-#populartitle p {
+.populartitle p {
     font-weight: 900;
     font-size: 1.4rem;
 }
 
 
-#popularhotel {
+.popularhotel1 {
     background-color: white;
     margin: 1rem auto;
     height: 23vh;
@@ -289,18 +292,50 @@ main {
     transition: 0.4s;
 }
 
-#popularhotel:hover {
+.popularhotel2 {
+    background-color: white;
+    margin: 1rem auto;
+    height: 23vh;
+    width: 85%;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    transition: 0.4s;
+}
+
+.popularhotel3 {
+    background-color: white;
+    margin: 1rem auto;
+    height: 23vh;
+    width: 85%;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    transition: 0.4s;
+}
+
+.popularhotel1:hover {
     transform: scale(1.05);
 }
 
-#popularphoto {
+.popularhotel2:hover {
+    transform: scale(1.05);
+}
+
+.popularhotel3:hover {
+    transform: scale(1.05);
+}
+
+.popularphoto {
     padding: 0.5rem;
     width: 13vh;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
 
-#popularprice {
+.popularprice {
     height: 100%;
     width: 100%;
     display: flex;
@@ -308,7 +343,7 @@ main {
     justify-content: flex-start;
 }
 
-#popularprice h3 {
+.popularprice h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding: 0;
@@ -316,18 +351,18 @@ main {
     font-weight: 600;
 }
 
-#popularprice p {
+.popularprice p {
     margin-top: 0;
     padding: 0;
 }
 
-#popularprice2 {
+.popularprice2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#popularprice2 h3 {
+.popularprice2 h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding: 0;
@@ -335,31 +370,35 @@ main {
     font-weight: 600;
 }
 
-#popularprice2 p {
+.popularprice2 p {
     margin-top: 0;
     padding: 0;
 }
 
-#boldprice {
+.boldprice {
     font-weight: bold;
 }
-#star-align {
+
+.star-align {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#star {
+
+.star {
     margin-bottom: 2%;
     display: flex;
 }
-#bluestar {
+
+.bluestar {
     padding: 0.1rem;
     color: #0065fc;
     font-size: 1.1rem;
 }
-#greystar {
+
+.greystar {
     padding: 0.1rem;
     color: #f2f2f2;
     font-size: 1.1rem;
@@ -367,7 +406,7 @@ main {
 
 /********** LODGING **********/
 
-#lodging {
+.lodging {
     background-color: #f2f2f2;
     margin: 2rem auto;
     padding: 0.8rem 0rem;
@@ -377,7 +416,7 @@ main {
     flex-direction: column;
 }
 
-#lodginghotel1 {
+.lodginghotel1 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -390,11 +429,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel1:hover {
+.lodginghotel1:hover {
     transform: scale(1.05);
 }
 
-#lodginghotel2 {
+.lodginghotel2 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -407,11 +446,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel2:hover {
+.lodginghotel2:hover {
     transform: scale(1.05);
 }
 
-#lodginghotel3 {
+.lodginghotel3 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -424,11 +463,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel3:hover {
+.lodginghotel3:hover {
     transform: scale(1.05);
 }
 
-#lodginghotel4 {
+.lodginghotel4 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -441,11 +480,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel4:hover {
+.lodginghotel4:hover {
     transform: scale(1.05);
 }
 
-#lodginghotel5 {
+.lodginghotel5 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -458,11 +497,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel5:hover {
+.lodginghotel5:hover {
     transform: scale(1.05);
 }
 
-#lodginghotel6 {
+.lodginghotel6 {
     background-color: white;
     margin: 1rem auto;
     height: 31vh;
@@ -475,11 +514,11 @@ main {
     transition: 0.4s;
 }
 
-#lodginghotel6:hover {
+.lodginghotel6:hover {
     transform: scale(1.05);
 }
 
-#lodgingphoto {
+.lodgingphoto {
     padding-bottom: 0.3rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -489,14 +528,14 @@ main {
     object-fit: cover;
 }
 
-#lodgingprice {
+.lodgingprice {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#lodgingprice h3 {
+.lodgingprice h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
     margin-left: 1rem;
@@ -505,20 +544,20 @@ main {
     font-weight: 600;
 }
 
-#lodgingprice p {
+.lodgingprice p {
     margin-top: 0;
     margin-bottom: 0rem;
     margin-left: 1rem;
     padding: 0;
 }
 
-#lodgingstar {
+.lodgingstar {
     margin-bottom: 2%;
     margin-left: 1rem;
     display: flex;
 }
 
-#showmore {
+.showmore {
     margin-left: 2rem;
     font-size: 18px;
     font-weight: bold;
@@ -526,7 +565,7 @@ main {
 /********** ACTIVITY **********/
 
 
-#marseilleactivity {
+.marseilleactivity {
     margin: 2rem auto;
     padding: 0.8rem 0rem;
     width: 85%;
@@ -535,18 +574,18 @@ main {
     flex-direction: column;
 }
 
-#activitytitle {
+.activitytitle {
     margin: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#activityarea1:hover {
+.activityarea1:hover {
     transform: scale(1.05);
 }
 
-#activityarea1 {
+.activityarea1 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -560,7 +599,7 @@ main {
     transition: 0.4s;
 }
 
-#activityarea2 {
+.activityarea2 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -574,11 +613,11 @@ main {
     transition: 0.4s;
 }
 
-#activityarea2:hover {
+.activityarea2:hover {
     transform: scale(1.05);
 }
 
-#activityarea3 {
+.activityarea3 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -592,11 +631,11 @@ main {
     transition: 0.4s;
 }
 
-#activityarea3:hover {
+.activityarea3:hover {
     transform: scale(1.05);
 }
 
-#activityarea4 {
+.activityarea4 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -610,11 +649,11 @@ main {
     transition: 0.4s;
 }
 
-#activityarea4:hover {
+.activityarea4:hover {
     transform: scale(1.05);
 }
 
-#activityarea5 {
+.activityarea5 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -628,11 +667,11 @@ main {
     transition: 0.4s;
 }
 
-#activityarea5:hover {
+.activityarea5:hover {
     transform: scale(1.05);
 }
 
-#activityarea6 {
+.activityarea6 {
     background-color: white;
     margin: 1rem auto;
     height: 25vh;
@@ -646,11 +685,11 @@ main {
     transition: 0.4s;
 }
 
-#activityarea6:hover {
+.activityarea6:hover {
     transform: scale(1.05);
 }
 
-#activityphoto {
+.activityphoto {
     margin: auto;
     height: 17vh;
     width: 100%;
@@ -658,7 +697,7 @@ main {
     object-fit: cover;
 }
 
-#area-name {
+.area-name {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -672,30 +711,32 @@ footer {
     margin: auto;
 }
 
-#footerblock {
+.footerblock {
     width: 90%;
     margin: auto;
     padding: 1rem 0rem;
 }
-#footertitle {
+
+.footertitle {
     margin: 0;
     padding: 0.3rem 0;
 }
-#footer1 {
+
+.footer1 {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-#footer2 {
+.footer2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-#footer3 {
+.footer3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     display: flex;
@@ -724,47 +765,49 @@ footer a:hover {
 
     /********** NAV **********/
 
-    #nav1 {
+    .nav1 {
         display: none;
     }
-    #nav2 {
+
+    .nav2 {
         display: flex;
         justify-content: space-between;
         align-content: center;
     }
 
-    #nav-logo {
+    .nav-logo {
         width: 8vh;
         display: flex;
     }
 
-    #nav2-menu {
+    .nav2-menu {
         display: flex;
     }
 
-    #nav-lodging {
+    .nav-lodging {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-lodging a {
+    .nav-lodging a {
         padding: 2rem;
     }
-    #nav-activity {
+
+    .nav-activity {
         border-top: 3px solid transparent;
     }
 
-    #nav-activity:hover {
+    .nav-activity:hover {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-activity a {
+    .nav-activity a {
     padding: 2rem;
 
     }
 
-    #nav-sign-up {
+    .nav-sign-up {
         padding-top: 1.5rem;
         padding-left: 2rem;
         border-top: 3px solid transparent;
@@ -773,51 +816,51 @@ footer a:hover {
 
     /********** SEARCH **********/
 
-    #title-h1 {
+    .title-h1 {
         margin:  auto;
     }
 
-    #subtitle {
+    .subtitle {
         margin: auto;
     }
 
-    #research1 {
+    .research1 {
         display: none;
         margin: 0;
         padding: 1rem 0;
     }
     
-    #research2 {
+    .research2 {
         display: flex;
         margin: auto;
         padding: 1rem 0;
     }
     
-    #searchbar {
+    .searchbar {
         width: 15rem;
     }
 
-    #filter {
+    .filter {
         width: 90%;
         display: flex;
         justify-content: flex-start;
     }
 
-    #title-h2 {
+    .title-h2 {
         margin-top: 2rem;
         margin-left: 2.8rem;
         margin-right: 0;
         display: flex;
     }
 
-    #filter ul {
+    .filter ul {
         margin-left: 0;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    #info {
+    .info {
         width: 90%;
         margin: auto;
     }
@@ -827,7 +870,31 @@ footer a:hover {
         width: 90%;
     }
 
-    #popularhotel {
+    .popularhotel1 {
+        background-color: white;
+        margin: 1rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        transition: 0.4s;
+    }
+
+    .popularhotel2 {
+        background-color: white;
+        margin: 1rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        transition: 0.4s;
+    }
+
+    .popularhotel3 {
         background-color: white;
         margin: 1rem auto;
         height: 15vh;
@@ -839,12 +906,13 @@ footer a:hover {
         transition: 0.4s;
     }
     
-    #popularphoto {
+    .popularphoto {
         width: 25vh;
     }
+
     /********** LODGING **********/
 
-    #lodging {
+    .lodging {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -858,64 +926,64 @@ footer a:hover {
 
     }
 
-    #populartitle {
+    .populartitle {
         margin: auto;
         grid-area: title;
     }
 
-    #lodgingtitle {
+    .lodgingtitle {
         width: 100%;
         margin-left: 2.2rem;
     }
 
-    #lodgingphoto {
+    .lodgingphoto {
         height: 13vh;
     }
 
-    #lodginghotel1 {
+    .lodginghotel1 {
         height: 23vh;
         width: 85%;
         grid-area: hotel1;
     }
 
-    #lodginghotel2 {
+    .lodginghotel2 {
         height: 23vh;
         width: 85%;
         grid-area: hotel2;
     }
 
-    #lodginghotel3 {
+    .lodginghotel3 {
         height: 23vh;
         width: 85%;
         grid-area: hotel3;
     }
 
-    #lodginghotel4 {
+    .lodginghotel4 {
         height: 23vh;
         width: 85%;
         grid-area: hotel4;
     }
 
-    #lodginghotel5 {
+    .lodginghotel5 {
         height: 23vh;
         width: 85%;
         grid-area: hotel5;
     }
 
-    #lodginghotel6 {
+    .lodginghotel6 {
         height: 23vh;
         width: 85%;
         grid-area: hotel6;
     }
 
-    #showmore {
+    .showmore {
         margin-left: 4.5%;
         grid-area: more;
     }
 
     /********** ACTIVITY **********/
 
-    #marseilleactivity {
+    .marseilleactivity {
         display: grid;
         grid-gap: 2rem 2rem;
         grid-template-columns: repeat(2, 1fr);
@@ -927,50 +995,51 @@ footer a:hover {
                         "activity5 activity6";
     }
 
-    #activitytitle {
+    .activitytitle {
         grid-area: title;
     }
 
-    #activityphoto {
+    .activityphoto {
         margin: auto;
     }
 
-    #activityarea1 {
+    .activityarea1 {
         height: 20vh;
         grid-area: activity1;
     }
 
-    #activityarea2 {
+    .activityarea2 {
         height: 20vh;
         grid-area: activity2;
     }
 
-    #activityarea3 {
+    .activityarea3 {
         height: 20vh;
         grid-area: activity3;
     }
 
-    #activityarea4 {
+    .activityarea4 {
         height: 20vh;
         grid-area: activity4;
     }
 
-    #activityarea5 {
+    .activityarea5 {
         height: 20vh;
         grid-area: activity5;
     }
 
-    #activityarea6 {
+    .activityarea6 {
         height: 20vh;
         grid-area: activity6;
     }
 
-    #area-name {
+    .area-name {
         margin-bottom: 1.5rem;
     }
+
     /********** FOOTER **********/
 
-    #footerblock {
+    .footerblock {
         width: 90%;
         margin: auto;
         padding: 1rem 0rem;
@@ -978,15 +1047,15 @@ footer a:hover {
         align-content: flex-start;
     }
     
-    #footer1 {
+    .footer1 {
         margin: 0;
     }
     
-    #footer2 {
+    .footer2 {
         margin: 0 4rem;
     }
     
-    #footer3 {
+    .footer3 {
         margin: 0 4rem;
     }
 }
@@ -1004,47 +1073,49 @@ footer a:hover {
 
     /********** NAV **********/
 
-    #nav1 {
+    .nav1 {
         display: none;
     }
-    #nav2 {
+
+    .nav2 {
         display: flex;
         justify-content: space-between;
         align-content: center;
     }
 
-    #nav-logo {
+    .nav-logo {
         width: 10vh;
         display: flex;
     }
 
-    #nav2-menu {
+    .nav2-menu {
         display: flex;
     }
 
-    #nav-lodging {
+    .nav-lodging {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-lodging a {
+    .nav-lodging a {
         padding: 2rem;
     }
-    #nav-activity {
+
+    .nav-activity {
         border-top: 3px solid transparent;
     }
 
-    #nav-activity:hover {
+    .nav-activity:hover {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-activity a {
+    .nav-activity a {
     padding: 2rem;
 
     }
 
-    #nav-sign-up {
+    .nav-sign-up {
         padding-top: 1.5rem;
         padding-left: 2rem;
         border-top: 3px solid transparent;
@@ -1053,58 +1124,58 @@ footer a:hover {
 
     /********** SEARCH **********/
 
-    #title-h1 {
+    .title-h1 {
         margin:  auto;
     }
 
-    #subtitle {
+    .subtitle {
         margin: auto;
     }
 
-    #research1 {
+    .research1 {
         display: none;
         margin: 0;
         padding: 1rem 0;
     }
     
-    #research2 {
+    .research2 {
         display: flex;
         margin: auto;
         padding: 1rem 0;
     }
     
-    #searchbar {
+    .searchbar {
         width: 15rem;
     }
 
-    #filter {
+    .filter {
         width: 95%;
         margin: auto;
         display: flex;
         justify-content: flex-start;
     }
 
-    #title-h2 {
+    .title-h2 {
         margin-top: 2rem;
         margin-left: 2.8rem;
         margin-right: 0;
         display: flex;
     }
 
-    #filter ul {
+    .filter ul {
         margin-left: 0;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    #info {
+    .info {
         width: 90%;
         margin: auto;
     }
     /********** LODGINGBLOCK **********/
 
-    #lodgingblock {
+    .lodgingblock {
         display: flex;
         flex-direction: column;
     }
@@ -1124,29 +1195,48 @@ footer a:hover {
         justify-content: space-evenly;
     }
 
-    #populartitle {
+    .populartitle {
         grid-area: title;
         margin: auto;
         width: 95%;
     }
 
-    #popularhotel {
+    .popularhotel1 {
         background-color: white;
         margin: 1.7rem 0;
         height: 20vh;
         width: 30%;
         border-radius: 20px 20px;
         display: flex;
-    }   
+    }
+    
+    .popularhotel2 {
+        background-color: white;
+        margin: 1.7rem 0;
+        height: 20vh;
+        width: 30%;
+        border-radius: 20px 20px;
+        display: flex;
+    }
 
-    #popularprice p {
+    .popularhotel3 {
+        background-color: white;
+        margin: 1.7rem 0;
+        height: 20vh;
+        width: 30%;
+        border-radius: 20px 20px;
+        display: flex;
+    }
+
+    .popularprice p {
         margin-top: 0;
         margin-bottom: 2.2rem;
         padding: 0;
     }
+
     /********** LODGING **********/
 
-    #lodging {
+    .lodging {
         margin: auto;
         width: 90%;
         display: flex;
@@ -1155,38 +1245,37 @@ footer a:hover {
         align-content: center;
     }
 
-    #lodgingtitle {
+    .lodgingtitle {
         width: 95%;
     }
 
-    #lodginghotel1 {
+    .lodginghotel1 {
         width: 30%;
     }
 
-    #lodginghotel2 {
+    .lodginghotel2 {
         width: 30%;
     }
 
-    #lodginghotel3 {
+    .lodginghotel3 {
         width: 30%;
     }
 
-    #lodginghotel4 {
+    .lodginghotel4 {
         width: 30%;
     }
 
-    #lodginghotel5 {
+    .lodginghotel5 {
         width: 30%;
     }
 
-    #lodginghotel6 {
+    .lodginghotel6 {
         width: 30%;
     }
-
 
     /********** ACTIVITY **********/
 
-    #marseilleactivity {
+    .marseilleactivity {
         height: 550px;
         width: 90%;
         display: grid;
@@ -1202,7 +1291,7 @@ footer a:hover {
                         "activity1 activity3 activity4 activity6";
     }
 
-    #activityphoto {
+    .activityphoto {
         margin: 0 auto;
         height: 90%;
         width: 100%;
@@ -1210,37 +1299,37 @@ footer a:hover {
         object-fit: cover;
     }
 
-    #activitytitle {
+    .activitytitle {
         grid-area: title;
     }
 
-    #activityarea1 {
+    .activityarea1 {
         height: 100%;
         grid-area: activity1;
     }
 
-    #activityarea2 {
+    .activityarea2 {
         height: 29.7vh;
         grid-area: activity2;
     }
 
-    #activityarea3 {
+    .activityarea3 {
         margin-top: 1.9rem;
         height: 20vh;
         grid-area: activity3;
     }
 
-    #activityarea4 {
+    .activityarea4 {
         height: 100%;
         grid-area: activity4;
     }
 
-    #activityarea5 {
+    .activityarea5 {
         height: 20vh;
         grid-area: activity5;
     }
 
-    #activityarea6 {
+    .activityarea6 {
         margin-top: 2.5rem;
         height: 29.7vh;
         grid-area: activity6;
@@ -1248,7 +1337,7 @@ footer a:hover {
 
         /********** FOOTER **********/
 
-    #footerblock {
+    .footerblock {
         width: 90%;
         margin: auto;
         padding: 1rem 0rem;
@@ -1256,18 +1345,18 @@ footer a:hover {
         align-content: center;
     }
     
-    #footer1 {
+    .footer1 {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2rem;
         margin-right: 6rem;
     }
     
-    #footer2 {
+    .footer2 {
         margin: 0 7rem;
     }
     
-    #footer3 {
+    .footer3 {
         margin: 0 7rem;
     }
 }
@@ -1281,52 +1370,55 @@ footer a:hover {
     /********** HEADER **********/
 
     header {
+        max-width: 1375px;
         width: 95%;
     }
 
     /********** NAV **********/
 
-    #nav1 {
+    .nav1 {
         display: none;
     }
-    #nav2 {
+
+    .nav2 {
         display: flex;
         justify-content: space-between;
         align-content: center;
     }
 
-    #nav-logo {
+    .nav-logo {
         width: 10vh;
         display: flex;
     }
 
-    #nav2-menu {
+    .nav2-menu {
         display: flex;
     }
 
-    #nav-lodging {
+    .nav-lodging {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-lodging a {
+    .nav-lodging a {
         padding: 2rem;
     }
-    #nav-activity {
+
+    .nav-activity {
         border-top: 3px solid transparent;
     }
 
-    #nav-activity:hover {
+    .nav-activity:hover {
         border-top: 3px solid #0065fc;
         border-bottom: none;
     }
 
-    #nav-activity a {
+    .nav-activity a {
     padding: 2rem;
 
     }
 
-    #nav-sign-up {
+    .nav-sign-up {
         padding-top: 1.5rem;
         padding-left: 2rem;
         border-top: 3px solid transparent;
@@ -1335,61 +1427,62 @@ footer a:hover {
 
     /********** SEARCH **********/
 
-    #title-h1 {
+    .title-h1 {
         width: 95%;
         margin:  auto;
     }
 
-    #subtitle {
+    .subtitle {
         width: 95%;
         margin: auto;
     }
 
-    #research1 {
+    .research1 {
         display: none;
         margin: 0;
         padding: 1rem 0;
     }
     
-    #research2 {
+    .research2 {
         width: 95%;
         display: flex;
         margin: auto;
         padding: 1rem 0;
     }
     
-    #searchbar {
+    .searchbar {
         width: 15rem;
     }
 
-    #filter {
+    .filter {
         width: 100%;
         margin: auto;
         display: flex;
         justify-content: flex-start;
     }
 
-    #title-h2 {
+    .title-h2 {
         margin-top: 2rem;
         margin-left: 2.8rem;
         margin-right: 0;
         display: flex;
     }
 
-    #filter ul {
+    .filter ul {
         margin-left: 0;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    #info {
+    .info {
         width: 95%;
         margin: auto;
     }
+
     /********** LODGINGBLOCK **********/
 
-    #lodgingblock {
+    .lodgingblock {
         margin: auto;
         width: 95%;
         display: flex;
@@ -1403,7 +1496,6 @@ footer a:hover {
         background-color: #f2f2f2;
         margin: 2rem 0;
         padding: 0;
-        height: 20%;
         width: 30%;
         border-radius: 20px 20px;
         display: flex;
@@ -1412,29 +1504,57 @@ footer a:hover {
         justify-content: space-evenly;
     }
 
-    #populartitle {
+    .populartitle {
         grid-area: title;
-        margin: auto;
+        margin: 0 auto;
+        padding-top: 0.2rem;
         width: 85%;
     }
 
-    #popularhotel {
+    .popularhotel1 {
         background-color: white;
-        margin: 1.7rem auto;
+        margin-top: 0.3rem;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
         height: 15vh;
         width: 85%;
         border-radius: 20px 20px;
         display: flex;
-    }   
+    }
+    
+    .popularhotel2 {
+        background-color: white;
+        margin: 1.5rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+    }
 
-    #popularprice p {
+    .popularhotel3 {
+        background-color: white;
+        margin: 1.5rem auto;
+        height: 15vh;
+        width: 85%;
+        border-radius: 20px 20px;
+        display: flex;
+    }
+
+    .popularprice p {
         margin-top: 0;
-        margin-bottom: 2.2rem;
+        margin-bottom: 0rem;
         padding: 0;
     }
+
+    .star {
+        margin-bottom: 3%;
+        display: flex;
+    }
+
     /********** LODGING **********/
 
-    #lodging {
+    .lodging {
         margin: 2rem 0;
         height: 60%;
         width: 65%;
@@ -1444,40 +1564,40 @@ footer a:hover {
         align-content: center;
     }
 
-    #lodgingphoto {
+    .lodgingphoto {
         height: 13vh;
     }
 
-    #lodgingtitle {
+    .lodgingtitle {
         width: 95%;
     }
 
-    #lodginghotel1 {
+    .lodginghotel1 {
         height: 28%;
         width: 30%;
     }
 
-    #lodginghotel2 {
+    .lodginghotel2 {
         height: 28%;
         width: 30%;
     }
 
-    #lodginghotel3 {
+    .lodginghotel3 {
         height: 28%;
         width: 30%;
     }
 
-    #lodginghotel4 {
+    .lodginghotel4 {
         height: 28%;
         width: 30%;
     }
 
-    #lodginghotel5 {
+    .lodginghotel5 {
         height: 28%;
         width: 30%;
     }
 
-    #lodginghotel6 {
+    .lodginghotel6 {
         height: 28%;
         width: 30%;
     }
@@ -1485,9 +1605,10 @@ footer a:hover {
 
     /********** ACTIVITY **********/
 
-    #marseilleactivity {
+    .marseilleactivity {
         height: 550px;
-        width: 90%;
+        max-width: 1360px;
+        width: 95%;
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
@@ -1501,7 +1622,7 @@ footer a:hover {
                         "activity1 activity3 activity4 activity6";
     }
 
-    #activityphoto {
+    .activityphoto {
         margin: 0 auto;
         height: 90%;
         width: 100%;
@@ -1509,37 +1630,37 @@ footer a:hover {
         object-fit: cover;
     }
 
-    #activitytitle {
+    .activitytitle {
         grid-area: title;
     }
 
-    #activityarea1 {
+    .activityarea1 {
         height: 100%;
         grid-area: activity1;
     }
 
-    #activityarea2 {
+    .activityarea2 {
         height: 29.7vh;
         grid-area: activity2;
     }
 
-    #activityarea3 {
+    .activityarea3 {
         margin-top: 1.9rem;
         height: 20vh;
         grid-area: activity3;
     }
 
-    #activityarea4 {
+    .activityarea4 {
         height: 100%;
         grid-area: activity4;
     }
 
-    #activityarea5 {
+    .activityarea5 {
         height: 20vh;
         grid-area: activity5;
     }
 
-    #activityarea6 {
+    .activityarea6 {
         margin-top: 2.5rem;
         height: 29.7vh;
         grid-area: activity6;
@@ -1547,26 +1668,26 @@ footer a:hover {
 
         /********** FOOTER **********/
 
-    #footerblock {
-        width: 90%;
+    .footerblock {
+        max-width: 1400px;
         margin: auto;
         padding: 1rem 0rem;
         display: flex;
         align-content: center;
     }
     
-    #footer1 {
+    .footer1 {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2rem;
         margin-right: 6rem;
     }
     
-    #footer2 {
+    .footer2 {
         margin: 0 7rem;
     }
     
-    #footer3 {
+    .footer3 {
         margin: 0 7rem;
     }
 }
