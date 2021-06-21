@@ -26,11 +26,11 @@ header {
     padding: 0;
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-                    "logo sign-up"
-                    "lodging activity";
+                    "logo . . sign-up"
+                    "lodging lodging activity activity";
 }
 
 .nav2 {
@@ -42,16 +42,32 @@ a {
 }
 
 .nav-logo {
-    width: 10vh;
-    padding-top: 1.1rem;
-    padding-right: 35%;
+    margin: auto;
+    min-width: 90px;
+    max-width: 90px;
+    padding-top: 0.9rem;
+    padding-right: 0%;
+    padding-left: 1rem;
     align-content: center;
     grid-area: logo;
 }
 
+.nav-sign-up {
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 1rem;
+    min-width: 90px;
+    max-width: 90px;
+    grid-area: sign-up;
+}
+
+.nav-sign-up a {
+    font-weight: bold;
+    color: #0065fc;
+}
+
 .nav-lodging {
     padding: 1.5rem 0rem;
-    border: 3px solid transparent;
     grid-area: lodging;
 }
 
@@ -76,7 +92,6 @@ a {
 
 .nav-activity {
     padding: 1.5rem 0rem;
-    border: 3px solid transparent;
     grid-area: activity;
 }
 
@@ -92,17 +107,6 @@ a {
 .nav-activity a {
     padding: 2rem 0;
     color: #000000;
-}
-
-.nav-sign-up {
-    padding-left: 35%;
-    padding-top: 1.7rem;
-    grid-area: sign-up;
-}
-
-.nav-sign-up a {
-    font-weight: bold;
-    color: #0065fc;
 }
 
 /********** MAIN **********/
@@ -122,28 +126,31 @@ main {
 
 .title-h1 {
     width: 90%;
-    margin: 0 7%;
+    max-width: 570px;
+    margin: auto;
     padding: 0.5rem 0;
     font-size: 1.7rem;
 }
 
 .subtitle {
     width: 90%;
-    margin: 0 7%;
+    max-width: 570px;
+    margin: auto;
     padding: 0;
     font-size: 1rem;
 }
 
 .research1 {
     width: 90%;
-    margin: 0 7%;
+    max-width: 570px;
+    margin: auto;
     padding: 1rem 0;
 }
 
 .research2 {
     width: 90%;
     display: none;
-    margin: 0 7%;
+    margin: auto;
     padding: 1rem 0;
 }
 
@@ -178,19 +185,19 @@ main {
 
 .filter {
     margin: auto;
-    width: 100%;
+    width: 90%;
+    max-width: 570px;
 }
 
 .title-h2 {
     height: 20%;
-    margin: 0 7%;
+    margin: 0;
     display: inline;
     font-size: 1.5rem;
 }
 
 .filter ul {
     width: 90%;
-    margin-left: 2%;
     padding: 0;
     display: inline-flex;
     flex-wrap: wrap;
@@ -199,7 +206,8 @@ main {
 .filter a {
     display: inline-block;
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 0;
+    margin-right: 25px;
     padding: 0 20px 0 0;
     border: 2px solid #f2f2f2;
     border-radius: 200px;
@@ -279,12 +287,15 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
+.lodgingblock i {
+    font-size: 15px;
+}
+
 #popular {
     background-color: #f2f2f2;
     margin: 2rem auto;
     padding: 0.8rem 0rem;
-    width: 85%;
-    border-radius: 20px 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -312,9 +323,11 @@ main {
 .popularhotel1 {
     background-color: white;
     margin: 1rem auto;
-    height: 23vh;
+    max-height: 150px;
+    min-height: 150px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -324,9 +337,11 @@ main {
 .popularhotel2 {
     background-color: white;
     margin: 1rem auto;
-    height: 23vh;
+    max-height: 150px;
+    min-height: 150px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -336,9 +351,11 @@ main {
 .popularhotel3 {
     background-color: white;
     margin: 1rem auto;
-    height: 23vh;
+    max-height: 150px;
+    min-height: 150px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -359,7 +376,8 @@ main {
 
 .popularphoto {
     padding: 0.5rem;
-    width: 13vh;
+    width: 110px;
+    min-width: 110px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
@@ -376,13 +394,14 @@ main {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .popularprice p {
     margin-top: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 .popularprice2 {
@@ -395,20 +414,30 @@ main {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .popularprice2 p {
     margin-top: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 .boldprice {
     font-weight: bold;
 }
 
-.star-align {
+.star-align-pop {
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star-align-lod {
     height: 100%;
     width: 100%;
     display: flex;
@@ -436,10 +465,10 @@ main {
 /********** LODGING **********/
 
 .lodging {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     margin: 2rem auto;
     padding: 0.8rem 0rem;
-    width: 85%;
+    width: 100%;
     border-radius: 20px 20px;
     display: flex;
     flex-direction: column;
@@ -448,9 +477,11 @@ main {
 .lodginghotel1 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -465,9 +496,11 @@ main {
 .lodginghotel2 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -482,9 +515,11 @@ main {
 .lodginghotel3 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -499,9 +534,11 @@ main {
 .lodginghotel4 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -516,9 +553,11 @@ main {
 .lodginghotel5 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -533,9 +572,11 @@ main {
 .lodginghotel6 {
     background-color: white;
     margin: 1rem auto;
-    height: 31vh;
+    height: 200px;
+    min-height: 200px;
     width: 85%;
     border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -552,7 +593,7 @@ main {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 0.5rem;
-    height: 17vh;
+    height: 100px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -569,19 +610,21 @@ main {
     margin-bottom: 0;
     margin-left: 1rem;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .lodgingprice p {
-    margin-top: 0;
+    margin-top: 0.3rem;
     margin-bottom: 0rem;
     margin-left: 1rem;
     padding: 0;
+    font-size: 15px;
 }
 
 .lodgingstar {
     margin-bottom: 2%;
+    margin-top: 0.2rem;
     margin-left: 1rem;
     display: flex;
 }
@@ -616,8 +659,8 @@ main {
 
 .activityarea1 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -630,8 +673,8 @@ main {
 
 .activityarea2 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -648,8 +691,8 @@ main {
 
 .activityarea3 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -666,8 +709,8 @@ main {
 
 .activityarea4 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -684,8 +727,8 @@ main {
 
 .activityarea5 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -702,8 +745,8 @@ main {
 
 .activityarea6 {
     background-color: white;
-    margin: 1rem auto;
-    height: 25vh;
+    margin: 2rem auto;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -720,7 +763,7 @@ main {
 
 .activityphoto {
     margin: auto;
-    height: 19vh;
+    height: 100px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -728,6 +771,7 @@ main {
 
 .area-name {
     margin-left: 1rem;
+    margin-bottom: 1.7rem;
     display: flex;
     flex-direction: column;
 }
@@ -805,8 +849,21 @@ footer a:hover {
     }
 
     .nav-logo {
-        width: 10vh;
-        display: flex;
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 0.9rem;
+        padding-left: 0%;
+        padding-right: 0;
+    }
+    
+    .nav-sign-up {
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 1.7rem;
+        padding-left: 0%;
+        padding-right: 0;
     }
 
     .nav2-menu {
@@ -842,21 +899,17 @@ footer a:hover {
 
     }
 
-    .nav-sign-up {
-        padding-top: 1.5rem;
-        padding-left: 2rem;
-        border-top: 3px solid transparent;
-    
-    }
 
     /********** SEARCH **********/
 
     .title-h1 {
         margin:  auto;
+        max-width: none;
     }
 
     .subtitle {
         margin: auto;
+        max-width: none;
     }
 
     .research1 {
@@ -877,6 +930,7 @@ footer a:hover {
 
     .filter {
         width: 90%;
+        max-width: none;
         display: flex;
         justify-content: flex-start;
     }
@@ -884,7 +938,7 @@ footer a:hover {
     .title-h2 {
         margin-top: 2.2rem;
         margin-left: 0rem;
-        margin-right: 0;
+        margin-right: 25px;
         display: flex;
     }
 
@@ -899,10 +953,12 @@ footer a:hover {
         width: 90%;
         margin: auto;
     }
+    
     /********** POPULAR **********/
 
     #popular {
         width: 90%;
+        border-radius: 20px 20px;
     }
 
     .popularhotel1 {
@@ -942,16 +998,19 @@ footer a:hover {
     }
     
     .popularphoto {
-        width: 25vh;
+        width: 250px;
+    min-width: 250px;
     }
 
     /********** LODGING **********/
 
     .lodging {
+        background-color: #f2f2f2;
+        height: 100%;
         width: 90%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 7vh repeat(3, 1fr) 5vh;
+        grid-template-rows: 70px repeat(3, 270px) 50px;
         grid-template-areas: 
                         "title title"
                         "hotel1 hotel2"
@@ -972,41 +1031,47 @@ footer a:hover {
     }
 
     .lodgingphoto {
-        height: 13vh;
+        height: 130px;
     }
 
     .lodginghotel1 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel1;
     }
 
     .lodginghotel2 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel2;
     }
 
     .lodginghotel3 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel3;
     }
 
     .lodginghotel4 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel4;
     }
 
     .lodginghotel5 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel5;
     }
 
     .lodginghotel6 {
-        height: 23vh;
+        height: 225px;
+        min-height: 225px;
         width: 85%;
         grid-area: hotel6;
     }
@@ -1020,7 +1085,7 @@ footer a:hover {
 
     .marseilleactivity {
         display: grid;
-        grid-gap: 2rem 2rem;
+        grid-gap: 0rem 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 4rem repeat(3, 1fr);
         grid-template-areas: 
@@ -1035,36 +1100,43 @@ footer a:hover {
     }
 
     .activityphoto {
+        height: 160px;
         margin: auto;
     }
 
     .activityarea1 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity1;
     }
 
     .activityarea2 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity2;
     }
 
     .activityarea3 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity3;
     }
 
     .activityarea4 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity4;
     }
 
     .activityarea5 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity5;
     }
 
     .activityarea6 {
-        height: 20vh;
+        height: 200px;
+        width: 100%;
         grid-area: activity6;
     }
 
@@ -1119,8 +1191,21 @@ footer a:hover {
     }
 
     .nav-logo {
-        width: 10vh;
-        display: flex;
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 0.9rem;
+        padding-left: 0%;
+        padding-right: 0;
+    }
+    
+    .nav-sign-up {
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 1.7rem;
+        padding-left: 0%;
+        padding-right: 0;
     }
 
     .nav2-menu {
@@ -1156,21 +1241,18 @@ footer a:hover {
 
     }
 
-    .nav-sign-up {
-        padding-top: 1.5rem;
-        padding-left: 2rem;
-        border-top: 3px solid transparent;
-    
-    }
+
 
     /********** SEARCH **********/
 
     .title-h1 {
         margin:  auto;
+        max-width: none;
     }
 
     .subtitle {
         margin: auto;
+        max-width: none;
     }
 
     .research1 {
@@ -1191,6 +1273,7 @@ footer a:hover {
 
     .filter {
         width: 95%;
+        max-width: none;
         margin: auto;
         display: flex;
         justify-content: flex-start;
@@ -1199,7 +1282,7 @@ footer a:hover {
     .title-h2 {
         margin-top: 2.2rem;
         margin-left: 2.2rem;
-        margin-right: 0;
+        margin-right: 25px;
         display: flex;
     }
 
@@ -1224,7 +1307,6 @@ footer a:hover {
     /********** POPULAR **********/
 
     #popular {
-        
         background-color: #f2f2f2;
         margin-top: 1rem;
         padding: 0.8rem 0rem;
@@ -1240,6 +1322,14 @@ footer a:hover {
         grid-area: title;
         margin: auto;
         width: 95%;
+    }
+
+    .popularphoto {
+        padding: 0.5rem;
+        width: 125px;
+        min-width: 125px;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
     }
 
     .popularhotel1 {
@@ -1278,6 +1368,7 @@ footer a:hover {
     /********** LODGING **********/
 
     .lodging {
+        background-color: #f2f2f2;
         margin: auto;
         width: 90%;
         display: flex;
@@ -1290,27 +1381,43 @@ footer a:hover {
         width: 95%;
     }
 
+    .lodgingphoto {
+        min-height: 125px;
+    }
+
     .lodginghotel1 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
     .lodginghotel2 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
     .lodginghotel3 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
     .lodginghotel4 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
     .lodginghotel5 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
     .lodginghotel6 {
+        height: 225px;
+        min-height: 225px;
         width: 30%;
     }
 
@@ -1322,12 +1429,13 @@ footer a:hover {
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 4rem repeat(5, 0.3fr);
+        grid-template-rows: 4rem 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
         grid-template-areas: 
                         "title title title title"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 activity5"
-                        "activity1 activity2 activity4 activity6"
+                        "activity1 activity2 activity4 ."
+                        "activity1 . activity4 activity6"
                         "activity1 activity3 activity4 activity6"
                         "activity1 activity3 activity4 activity6";
     }
@@ -1346,41 +1454,49 @@ footer a:hover {
 
     .activityarea1 {
         height: 100%;
+        width: 100%;
         grid-area: activity1;
     }
 
     .activityarea2 {
-        height: 29.7vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity2;
     }
 
     .activityarea3 {
-        margin-top: 1.9rem;
-        height: 20vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity3;
     }
 
     .activityarea4 {
         height: 100%;
+        width: 100%;
         grid-area: activity4;
     }
 
     .activityarea5 {
-        height: 20vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity5;
     }
 
     .activityarea6 {
-        margin-top: 2.5rem;
-        height: 29.7vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity6;
     }
 
+    .area-name {
+        margin-bottom: 0;
+    }
         /********** FOOTER **********/
 
     .footerblock {
         width: 90%;
         margin: auto;
+        margin-top: 4rem;
         padding: 1rem 0rem;
         display: flex;
         align-content: center;
@@ -1428,8 +1544,21 @@ footer a:hover {
     }
 
     .nav-logo {
-        width: 10vh;
-        display: flex;
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 0.9rem;
+        padding-left: 0%;
+        padding-right: 0;
+    }
+    
+    .nav-sign-up {
+        margin: 0;
+        min-width: 90px;
+        max-width: 90px;
+        padding-top: 1.7rem;
+        padding-left: 0%;
+        padding-right: 0;
     }
 
     .nav2-menu {
@@ -1465,22 +1594,17 @@ footer a:hover {
 
     }
 
-    .nav-sign-up {
-        padding-top: 1.5rem;
-        padding-left: 2rem;
-        border-top: 3px solid transparent;
-    
-    }
-
     /********** SEARCH **********/
 
     .title-h1 {
         width: 95%;
+        max-width: none;
         margin:  auto;
     }
 
     .subtitle {
         width: 95%;
+        max-width: none;
         margin: auto;
     }
 
@@ -1503,6 +1627,7 @@ footer a:hover {
 
     .filter {
         width: 100%;
+        max-width: none;
         margin: auto;
         display: flex;
         justify-content: flex-start;
@@ -1511,7 +1636,7 @@ footer a:hover {
     .title-h2 {
         margin-top: 2.2rem;
         margin-left: 2.2rem;
-        margin-right: 0;
+        margin-right: 25px;
         display: flex;
     }
 
@@ -1558,6 +1683,14 @@ footer a:hover {
         width: 85%;
     }
 
+    .popularphoto {
+        padding: 0.5rem;
+        width: 125px;
+        min-width: 125px;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
+    }
+
     .popularhotel1 {
         background-color: white;
         margin-top: 0.3rem;
@@ -1602,6 +1735,7 @@ footer a:hover {
     /********** LODGING **********/
 
     .lodging {
+        background-color: #f2f2f2;
         margin: 2rem 0;
         height: 60%;
         width: 65%;
@@ -1612,7 +1746,7 @@ footer a:hover {
     }
 
     .lodgingphoto {
-        height: 13vh;
+        min-height: 125px;
     }
 
     .lodgingtitle {
@@ -1620,35 +1754,44 @@ footer a:hover {
     }
 
     .lodginghotel1 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
     .lodginghotel2 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
     .lodginghotel3 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
     .lodginghotel4 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
     .lodginghotel5 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
     .lodginghotel6 {
-        height: 28%;
-        width: 30%;
+        height: 225px;
+        min-height: 225px;
+        width: 28%;
     }
 
+    .showmore {
+        padding: 0 0.5rem;
+    }
 
     /********** ACTIVITY **********/
 
@@ -1659,12 +1802,13 @@ footer a:hover {
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 4rem repeat(5, 0.3fr);
+        grid-template-rows: 4rem 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
         grid-template-areas: 
                         "title title title title"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 activity5"
-                        "activity1 activity2 activity4 activity6"
+                        "activity1 activity2 activity4 ."
+                        "activity1 . activity4 activity6"
                         "activity1 activity3 activity4 activity6"
                         "activity1 activity3 activity4 activity6";
     }
@@ -1683,41 +1827,49 @@ footer a:hover {
 
     .activityarea1 {
         height: 100%;
+        width: 100%;
         grid-area: activity1;
     }
 
     .activityarea2 {
-        height: 29.7vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity2;
     }
 
     .activityarea3 {
-        margin-top: 1.9rem;
-        height: 20vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity3;
     }
 
     .activityarea4 {
         height: 100%;
+        width: 100%;
         grid-area: activity4;
     }
 
     .activityarea5 {
-        height: 20vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity5;
     }
 
     .activityarea6 {
-        margin-top: 2.5rem;
-        height: 29.7vh;
+        height: 100%;
+        width: 100%;
         grid-area: activity6;
     }
 
+    .area-name {
+        margin-bottom: 0;
+    }
         /********** FOOTER **********/
 
     .footerblock {
         max-width: 1400px;
         margin: auto;
+        margin-top: 4rem;
         padding: 1rem 0rem;
         display: flex;
         align-content: center;
