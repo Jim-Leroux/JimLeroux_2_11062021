@@ -67,6 +67,7 @@ a {
 }
 
 .nav-lodging {
+    border-bottom: 3px solid transparent;
     padding: 1.5rem 0rem;
     grid-area: lodging;
 }
@@ -91,6 +92,7 @@ a {
 }
 
 .nav-activity {
+    border-bottom: 3px solid transparent;
     padding: 1.5rem 0rem;
     grid-area: activity;
 }
@@ -130,6 +132,7 @@ main {
     margin: auto;
     padding: 0.5rem 0;
     font-size: 1.7rem;
+    font-weight: 600;
 }
 
 .subtitle {
@@ -163,7 +166,7 @@ main {
 }
 
 .searchbar {
-    width: 60%;
+    width: 50%;
     max-width: 15rem;
     padding: 1rem;
     border: 1px solid #f2f2f2;
@@ -194,6 +197,7 @@ main {
     margin: 0;
     display: flex;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .filter ul {
@@ -301,18 +305,27 @@ main {
     flex-direction: column;
 }
 
-.populartitle {
-    margin: auto;
+.populartitle{
+    margin: 1.5rem auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.populartitle i {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .lodgingtitle {
-    margin: auto;
+    margin: 1.5rem auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .populartitle p {
@@ -320,8 +333,7 @@ main {
     font-size: 1.4rem;
 }
 
-
-.popularhotel1 {
+.popularhotel1, .popularhotel2, .popularhotel3 {
     background-color: white;
     margin: 1rem auto;
     max-height: 150px;
@@ -335,43 +347,7 @@ main {
     transition: 0.4s;
 }
 
-.popularhotel2 {
-    background-color: white;
-    margin: 1rem auto;
-    max-height: 150px;
-    min-height: 150px;
-    width: 85%;
-    border-radius: 20px 20px;
-    box-shadow: 0px 0px 15px #dddddd;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    transition: 0.4s;
-}
-
-.popularhotel3 {
-    background-color: white;
-    margin: 1rem auto;
-    max-height: 150px;
-    min-height: 150px;
-    width: 85%;
-    border-radius: 20px 20px;
-    box-shadow: 0px 0px 15px #dddddd;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    transition: 0.4s;
-}
-
-.popularhotel1:hover {
-    transform: scale(1.05);
-}
-
-.popularhotel2:hover {
-    transform: scale(1.05);
-}
-
-.popularhotel3:hover {
+.popularhotel1:hover, .popularhotel2:hover, .popularhotel3:hover {
     transform: scale(1.05);
 }
 
@@ -384,8 +360,6 @@ main {
 }
 
 .popularprice {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -400,7 +374,7 @@ main {
 }
 
 .popularprice p {
-    margin-top: 0;
+    margin-top: 0.5rem;
     padding: 0;
     font-size: 15px;
 }
@@ -420,7 +394,7 @@ main {
 }
 
 .popularprice2 p {
-    margin-top: 0;
+    margin-top: 0.5rem;
     padding: 0;
     font-size: 15px;
 }
@@ -431,7 +405,6 @@ main {
 
 .star-align-pop {
     height: 100%;
-    width: 100%;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -631,7 +604,8 @@ main {
 }
 
 .showmore {
-    margin-left: 2rem;
+    margin: 1.5rem 0;
+    margin-left: 10%;
     font-size: 18px;
     font-weight: bold;
 }
@@ -639,7 +613,7 @@ main {
 
 
 .marseilleactivity {
-    margin: 2rem auto;
+    margin: 0rem auto;
     padding: 0.8rem 0rem;
     width: 85%;
     border-radius: 20px 20px;
@@ -649,7 +623,9 @@ main {
 
 .activitytitle {
     margin: auto;
-    width: 100%;
+    width: 84%;
+    font-size: 1.5rem;
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
 }
@@ -772,7 +748,9 @@ main {
 
 .area-name {
     margin-left: 1rem;
+    margin-top: 0.6rem;
     margin-bottom: 1.7rem;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
 }
@@ -794,6 +772,8 @@ footer {
 .footertitle {
     margin: 0;
     padding: 0.3rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .footer1 {
@@ -1024,7 +1004,6 @@ footer a:hover {
     }
 
     .populartitle {
-        margin: auto;
         grid-area: title;
     }
 
@@ -1086,20 +1065,20 @@ footer a:hover {
 
     /********** ACTIVITY **********/
 
+    .activitytitle {
+        width: 89%;
+    }
+
     .marseilleactivity {
+        margin: 0rem auto;
         display: grid;
         grid-gap: 0rem 2rem;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 4rem repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
-                        "title title"
                         "activity1 activity2"
                         "activity3 activity4"
                         "activity5 activity6";
-    }
-
-    .activitytitle {
-        grid-area: title;
     }
 
     .activityphoto {
@@ -1144,7 +1123,7 @@ footer a:hover {
     }
 
     .area-name {
-        margin-bottom: 1.5rem;
+        margin-top: 0.8rem;
     }
 
     /********** FOOTER **********/
@@ -1364,7 +1343,6 @@ footer a:hover {
     }
 
     .popularprice p {
-        margin-top: 0;
         margin-bottom: 2.2rem;
         padding: 0;
     }
@@ -1425,17 +1403,25 @@ footer a:hover {
         width: 30%;
     }
 
+    .showmore {
+        margin-left: 2.5%;
+    }
     /********** ACTIVITY **********/
 
+    .activitytitle {
+        width: 89%;
+        margin-top: 2rem;
+    }
+
     .marseilleactivity {
-        height: 550px;
+        height: 450px;
+        max-width: 1360px;
         width: 90%;
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 4rem 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
         grid-template-areas: 
-                        "title title title title"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 ."
@@ -1446,14 +1432,10 @@ footer a:hover {
 
     .activityphoto {
         margin: 0 auto;
-        height: 90%;
+        height: 100%;
         width: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
-    }
-
-    .activitytitle {
-        grid-area: title;
     }
 
     .activityarea1 {
@@ -1468,10 +1450,18 @@ footer a:hover {
         grid-area: activity2;
     }
 
+    .activityarea2 img {
+        height: 77%;
+    }
+
     .activityarea3 {
         height: 100%;
         width: 100%;
         grid-area: activity3;
+    }
+
+    .activityarea3 img {
+        height: 71%;
     }
 
     .activityarea4 {
@@ -1486,14 +1476,23 @@ footer a:hover {
         grid-area: activity5;
     }
 
+    .activityarea5 img {
+        height: 71%;
+    }
+
     .activityarea6 {
         height: 100%;
         width: 100%;
         grid-area: activity6;
     }
 
+    .activityarea6 img {
+        height: 77%;
+    }
+
     .area-name {
-        margin-bottom: 0;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
     }
         /********** FOOTER **********/
 
@@ -1727,9 +1726,13 @@ footer a:hover {
     }
 
     .popularprice p {
-        margin-top: 0;
+        margin-top: 0.5rem;
         margin-bottom: 0rem;
         padding: 0;
+    }
+
+    .star-align-pop {
+        width: auto;
     }
 
     .star {
@@ -1795,21 +1798,24 @@ footer a:hover {
     }
 
     .showmore {
-        padding: 0 0.5rem;
+        margin-left: 5%;
     }
 
     /********** ACTIVITY **********/
 
+    .activitytitle {
+        width: 94%;
+    }
+
     .marseilleactivity {
-        height: 550px;
+        height: 450px;
         max-width: 1360px;
         width: 95%;
         display: grid;
         grid-gap: 0 2.5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 4rem 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.4fr 0.4fr 1fr 1fr;
         grid-template-areas: 
-                        "title title title title"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 activity5"
                         "activity1 activity2 activity4 ."
@@ -1820,14 +1826,10 @@ footer a:hover {
 
     .activityphoto {
         margin: 0 auto;
-        height: 90%;
+        height: 100%;
         width: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
-    }
-
-    .activitytitle {
-        grid-area: title;
     }
 
     .activityarea1 {
@@ -1842,10 +1844,18 @@ footer a:hover {
         grid-area: activity2;
     }
 
+    .activityarea2 img {
+        height: 77%;
+    }
+
     .activityarea3 {
         height: 100%;
         width: 100%;
         grid-area: activity3;
+    }
+
+    .activityarea3 img {
+        height: 71%;
     }
 
     .activityarea4 {
@@ -1860,18 +1870,28 @@ footer a:hover {
         grid-area: activity5;
     }
 
+    .activityarea5 img {
+        height: 71%;
+    }
+
     .activityarea6 {
         height: 100%;
         width: 100%;
         grid-area: activity6;
     }
 
+    .activityarea6 img {
+        height: 77%;
+    }
+
     .area-name {
-        margin-bottom: 0;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
     }
         /********** FOOTER **********/
 
     .footerblock {
+        width: 100%;
         max-width: 1400px;
         margin: auto;
         margin-top: 4rem;
