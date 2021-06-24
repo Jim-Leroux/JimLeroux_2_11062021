@@ -160,13 +160,13 @@ main {
 .searchicon {
     background-color: #f2f2f2;
     padding: 1rem 1.2rem;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f1f1f1;
     border-radius: 14px 0px 0px 14px;
     font-size: 1rem;
 }
 
 .searchbar {
-    width: 50%;
+    width: 60%;
     max-width: 15rem;
     padding: 1rem;
     border: 1px solid #f2f2f2;
@@ -180,7 +180,7 @@ main {
 .searchbutton {
     background-color: #0065fc;
     padding: 1rem 1.5rem;
-    border: 1px solid #0065fc;
+    border: 1px solid #0065fd;
     border-radius: 0px 14px 14px 0px;
     font-size: 1rem;
     color: white;
@@ -230,7 +230,7 @@ main {
     height: 1rem;
     margin-right: 0.7rem;
     color: #0065fc;
-    border: 1rem solid #DEEBFF;
+    border: 1rem solid #deebfd;
     border-radius: 2rem;
 }
 
@@ -240,7 +240,7 @@ main {
     margin-right: 0.7rem;
     padding: 0 2px;
     color: #0065fc;
-    border: 1rem solid #DEEBFF;
+    border: 1rem solid #deebfd;
     border-radius: 2rem;
 }
 
@@ -249,7 +249,7 @@ main {
     height: 1rem;
     margin-right: 0.7rem;
     color: #0065fc;
-    border: 1rem solid #DEEBFF;
+    border: 1rem solid #deebfd;
     border-radius: 2rem;
 }
 
@@ -258,7 +258,7 @@ main {
     height: 1rem;
     margin-right: 0.7rem;
     color: #0065fc;
-    border: 1rem solid #DEEBFF;
+    border: 1rem solid #deebfd;
     border-radius: 2rem;
 }
 
@@ -306,11 +306,11 @@ main {
 }
 
 .populartitle{
-    margin: 1.5rem auto;
+    margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -320,11 +320,11 @@ main {
 }
 
 .lodgingtitle {
-    margin: 1.5rem auto;
+    margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -614,7 +614,7 @@ main {
 
 .marseilleactivity {
     margin: 0rem auto;
-    padding: 0.8rem 0rem;
+    padding: 0rem;
     width: 85%;
     border-radius: 20px 20px;
     display: flex;
@@ -622,9 +622,9 @@ main {
 }
 
 .activitytitle {
-    margin: auto;
+    margin: 0.5rem auto;
     width: 84%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -637,7 +637,7 @@ main {
 .activityarea1 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -651,7 +651,7 @@ main {
 .activityarea2 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -669,7 +669,7 @@ main {
 .activityarea3 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -687,7 +687,7 @@ main {
 .activityarea4 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -705,7 +705,7 @@ main {
 .activityarea5 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -723,7 +723,7 @@ main {
 .activityarea6 {
     background-color: white;
     margin: 2rem auto;
-    height: 125px;
+    height: 150px;
     width: 100%;
     border-radius: 20px 20px;
     display: flex;
@@ -740,7 +740,7 @@ main {
 
 .activityphoto {
     margin: auto;
-    height: 100px;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -748,8 +748,7 @@ main {
 
 .area-name {
     margin-left: 1rem;
-    margin-top: 0.6rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 2rem;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -808,7 +807,7 @@ footer a:hover {
 }
 /********** MEDIA QUERIES **********/
 
-@media screen and (min-width: 667px) and (max-width: 1100px) {
+@media screen and (min-width: 667px) and (max-width: 1150px) {
     
 
     /********** HEADER **********/
@@ -1123,7 +1122,7 @@ footer a:hover {
     }
 
     .area-name {
-        margin-top: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     /********** FOOTER **********/
@@ -1152,7 +1151,7 @@ footer a:hover {
 
 /********** MEDIA QUERIES **********/
 
-@media screen and (min-width: 1101px) and (max-width: 1439px) {
+@media screen and (min-width: 1151px) and (max-width: 1439px) {
 
     /********** HEADER **********/
 
@@ -1303,7 +1302,7 @@ footer a:hover {
 
     .populartitle {
         grid-area: title;
-        margin: 1rem auto;
+        margin: auto;
         width: 95%;
     }
 
@@ -1343,7 +1342,6 @@ footer a:hover {
     }
 
     .popularprice p {
-        margin-bottom: 2.2rem;
         padding: 0;
     }
 
@@ -1405,6 +1403,10 @@ footer a:hover {
 
     .showmore {
         margin-left: 2.5%;
+    }
+
+    .area-name {
+        margin-bottom: 0rem;
     }
     /********** ACTIVITY **********/
 
@@ -1490,10 +1492,6 @@ footer a:hover {
         height: 77%;
     }
 
-    .area-name {
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
-    }
         /********** FOOTER **********/
 
     .footerblock {
@@ -1682,7 +1680,7 @@ footer a:hover {
 
     .populartitle {
         grid-area: title;
-        margin: 1.7rem auto;
+        margin: 0.2rem auto;
         padding-top: 0.2rem;
         width: 85%;
     }
@@ -1885,8 +1883,7 @@ footer a:hover {
     }
 
     .area-name {
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 0rem;
     }
         /********** FOOTER **********/
 
