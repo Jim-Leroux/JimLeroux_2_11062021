@@ -820,7 +820,7 @@ footer a:hover {
         padding: 0;
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(7, 1fr) repeat(3, 0,3fr);
+        grid-template-columns: repeat(7, 1fr) repeat(3, 0.3fr);
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
                         "logo . . . . . . lodging activity sign-up";
@@ -1162,7 +1162,7 @@ footer a:hover {
         padding: 0;
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(7, 1fr) repeat(3, 0,3fr);
+        grid-template-columns: repeat(7, 1fr) repeat(3, 0.3fr);
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
                         "logo . . . . . . lodging activity sign-up";
@@ -1533,7 +1533,7 @@ footer a:hover {
         padding: 0;
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(7, 1fr) repeat(3, 0,3fr);
+        grid-template-columns: repeat(7, 1fr) repeat(3, 0.3fr);
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
                         "logo . . . . . . lodging activity sign-up";
